@@ -1,0 +1,137 @@
+body {
+    background-image: url("./clock.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+#container {
+    color: rgb(3, 3, 3);
+    
+
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(8, 8, 8)
+}
+#stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items:bottom;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.digit {
+    font-size: 150px;
+    font-weight: bold;
+    animation: scaleUp 0.2s ease-in-out;
+}
+@keyframes scaleUp {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.txt {
+    font-size: 40px;
+    font-weight: bold;
+}
+.social-txt {
+    font-size: 20px;
+    /*color: rgb(255, 252, 252);*/
+}
+
+#btn-container {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 7px 25px;
+    font-size: 15px;
+    margin: 0px 10px;
+    color: rgb(10, 7, 7);
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #43c6ac;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+#start {
+    background-color: blue;
+}
+
+#start:hover {
+    background-color: lightgreen;
+}
+
+#stop {
+    background-color: blue;
+}
+#stop:hover {
+    background-color: lightgreen;
+}
+
+
+#reset {
+    background-color: blue;
+}
+#reset:hover {
+    background-color: lightgreen;
+}
+
+
+@media screen and (max-width:800px){
+    #time span{
+        font-size: 4rem;
+    }
+    #time{
+        display: flex;
+        flex-direction: column;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#lap {
+    background-color: blue;
+}
+#lap:hover {
+    background-color: lightgreen;
+}
+
+
+#clearLap {
+    background-color:blue ;
+}
+#clearLap:hover {
+    background-color: lightgreen;
+}
+
+#laps {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 25px;
+    list-style-type: none;
+
+}
+#laps li {
+    background-color: #43c6ac;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    /*box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);*/
+}
